@@ -7,7 +7,11 @@ public class FunTest1 {
 
       // findMax(arr);
       // addToArr(88, 0, arr);
-      remove(99, arr);
+      // remove(99, arr);
+      changeArgs(0); //[0]
+      changeArgs(0); //[0]
+      changeArgs(new int[] {1,2,3,4}); //[1,2,3,4]
+      changeArgs(); //[]
    }
 
    public static void findMax(int[] arr){
@@ -51,4 +55,8 @@ public class FunTest1 {
       System.out.println(Arrays.toString(arr));
    }
 
+   // 可变参数
+   public static void changeArgs(int ...num) {
+      System.out.println(Arrays.toString(num));
+   }
 }
